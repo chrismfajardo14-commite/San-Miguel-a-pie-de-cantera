@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://san-miguel-cantera.chris-mfajardo14.workers.dev/sitemap.xml
