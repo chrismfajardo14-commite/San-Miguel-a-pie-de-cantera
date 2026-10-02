@@ -36,7 +36,7 @@
   --max:1440px;
   --sol:0;
 }
-:root[data-theme="dark"]{
+:root, :root[data-theme]{
   --bg:#1D1611; --bg-2:#251C15; --bg-3:#30251C;
   --ink:#F0E6D5; --ink-2:#CFBFA9; --ink-3:#A8957F;
   --hilo:#4D3D30; --acento:#E59C82; --sombra-rgb:0,0,0; --grafito:rgba(232,218,198,.3); --conf:#E6B866;
@@ -58,7 +58,7 @@ img{display:block; max-width:100%;}
 a{color:inherit;}
 button{font:inherit; color:inherit; cursor:pointer; background:none; border:0; padding:0;}
 h1,h2,h3,h4,p,figure,blockquote{margin:0;}
-html{color-scheme:light; background:var(--bg); overflow-x:hidden;}
+html{color-scheme:dark; background:var(--bg); overflow-x:hidden;}
 body{overflow-x:clip;}
 :focus-visible{outline:3px solid var(--acento); outline-offset:3px; border-radius:2px;}
 .portada :focus-visible, .neta :focus-visible, .fiestas :focus-visible, footer :focus-visible, .cuentanos :focus-visible, .pizarron :focus-visible, .nav.sobre :focus-visible{outline-color:var(--ocre-claro);}
@@ -107,7 +107,7 @@ body{overflow-x:clip;}
 .tag-falta{color:var(--acento);}
 .tag-falta::before{background:transparent; box-shadow:inset 0 0 0 1.5px currentColor;}
 .tag-broma{color:var(--rosa);}
-:root[data-theme="dark"] .tag-ok{color:#7FB592;}
+:root .tag-ok{color:#7FB592;}
 
 /* mapas */
 .ir{display:inline-flex; align-items:center; gap:8px; font-size:.78rem; font-weight:700; letter-spacing:.07em; text-transform:uppercase; text-decoration:none; color:var(--acento);}
